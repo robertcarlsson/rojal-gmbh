@@ -23,7 +23,7 @@ class Question extends Component {
 
   render() {
     return (
-      <Stage width={window.innerWidth} height={window.innerHeight}>
+      <Stage width={window.innerWidth} height={window.innerHeight - 80}>
         <Layer>
           <Rect
             x={0}
@@ -58,10 +58,11 @@ class Question extends Component {
             fill="white"
           />
           <Text
-            x={middle - 120}
+            x={middle - 250}
             y={50}
             text={this.props.question}
             fontSize={35}
+            width={500}
             align="center"
             fill="white"
           />

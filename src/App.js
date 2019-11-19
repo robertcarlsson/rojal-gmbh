@@ -1,11 +1,13 @@
 import React from "react";
+import Survey from "./survey";
+import "./App.css";
 
-import Question from "./Question/Question";
-
-export default function App() {
+function App() {
   return (
     <div>
-      <Question question={"Vad tycker du?"} />
+      <Survey />
     </div>
   );
 }
+
+export default App;
