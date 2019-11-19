@@ -5,7 +5,7 @@ import Question from "./Question/Question";
 export default function App() {
   return (
     <div>
-      <Question />
+      <Question question={"Vad tycker du?"} />
     </div>
   );
 }

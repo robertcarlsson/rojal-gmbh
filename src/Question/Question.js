@@ -62,7 +62,7 @@ class Question extends Component {
           <Text
             x={middle - 120}
             y={50}
-            text={"Vad tycker du?"}
+            text={this.props.question}
             fontSize={35}
             align="center"
             fill="white"
