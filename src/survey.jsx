@@ -5,52 +5,67 @@ class Survey extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            pageNumber: 0,
-            status1: "",
+            pageNumber: 1,
+            status1: "completed",
             status2: "",
             status3: "",
             status4: ""
         }
         this.showNextPage = this.showNextPage.bind(this)
         this.showPrevPage = this.showPrevPage.bind(this)
+        this.renderQuestion = this.renderQuestion.bind(this)
       }
     
     showNextPage() {
-        console.log("FILLING THE PROGRESS BAR");
-        this.setState({pageNumber: this.state.pageNumber + 1})
-        console.log(this.state.pageNumber);
-        if (this.state.pageNumber > 0) {
+        const pageNum = this.state.pageNumber + 1
+        this.setState({pageNumber: pageNum})
+        if (pageNum > 0) {
             this.setState({status1: "completed"})
         }
-        if (this.state.pageNumber > 1) {
+        if (pageNum > 1) {
             this.setState({status2: "completed"})
         }
-        if (this.state.pageNumber > 2) {
+        if (pageNum > 2) {
             this.setState({status3: "completed"})
         }
-        if (this.state.pageNumber > 3) {
+        if (pageNum > 3) {
             this.setState({status4: "completed"})
         }
-        
-        
     }
 
     showPrevPage() {
-        console.log("FILLING THE PROGRESS BAR");
-        this.setState({pageNumber: this.state.pageNumber - 1})
-        console.log(this.state.pageNumber);
-        if (this.state.pageNumber < 1) {
+        const pageNum = this.state.pageNumber - 1
+        this.setState({pageNumber: pageNum})
+        this.setState({pageNumber: pageNum})
+        if (pageNum <= 0) {
             this.setState({status1: ""})
         }
-        if (this.state.pageNumber < 2) {
+        if (pageNum <= 1) {
             this.setState({status2: ""})
         }
-        if (this.state.pageNumber < 3) {
+        if (pageNum <= 2) {
             this.setState({status3: ""})
         }
-        if (this.state.pageNumber < 4) {
+        if (pageNum <= 3) {
             this.setState({status4: ""})
         }
+    }
+
+    renderQuestion () {
+        let question = ""
+        if (this.state.pageNumber === 1) {
+           question = "Hur väl uppfyller Valtech dina förväntingar?"
+        }
+        else if (this.state.pageNumber === 2) {
+            question = "Hur väl trivs du på din arbetsplats?"
+        }
+        else if (this.state.pageNumber === 3) {
+            question = "Hur mår du egentligen?"
+        }
+        else if (this.state.pageNumber === 4) {
+            question = "Var du ärlig?"
+        }
+        return <p> {question} </p>
     }
 
     render() {
@@ -64,8 +79,15 @@ class Survey extends React.Component {
                 <li className={this.state.status4}> <span className="bubble"></span> </li>
             </ul>
                 {/* <ProgressBar pageNumber={this.state.pageNumber}/> */}
-                <button onClick={this.showPrevPage} type="button">Bakåt</button>
-                <button onClick={this.showNextPage} type="button"> Framåt </button>
+                <div className="lead">
+                    {this.renderQuestion()}
+                </div>
+                
+                <div>
+                    <button onClick={this.showPrevPage} type="button">Bakåt</button>
+                    <button onClick={this.showNextPage} type="button"> Framåt </button>
+                </div>
+
                 
             </div>
             
