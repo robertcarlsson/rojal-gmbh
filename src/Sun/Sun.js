@@ -1,14 +1,9 @@
 import React from "react";
 
-//import Container from "react-bootstrap/Container";
-
 //import Konva from "konva";
 import { Circle } from "react-konva";
 import "./Sun.css";
 
-//function SunCircle() {
-//  return <div className="sun-circle bg-dark" />;
-//}
 //const min_val = 200;
 //const max_val = window.innerHeight / 2;
 
