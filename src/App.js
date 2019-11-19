@@ -1,11 +1,11 @@
 import React from "react";
-import logo from "./logo.svg";
+import Survey from "./survey";
 import "./App.css";
 
 function App() {
   return (
     <div>
-      <Question question={"Vad tycker du?"} />
+      <Survey />
     </div>
   );
 }
