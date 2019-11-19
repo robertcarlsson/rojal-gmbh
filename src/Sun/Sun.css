@@ -1,0 +1,12 @@
+.sun-circle {
+  background-color: red;
+  border-radius: 100%;
+  width: 100px;
+  height: 100px;
+}
+
+.sun-container {
+  height: 100vw;
+  width: 100vh;
+  color: red;
+}

@@ -7,8 +7,6 @@ import Sun from "../Sun/Sun";
 export const min_height = window.innerHeight / 1.3;
 export const middle = window.innerWidth / 2;
 
-//const radius =
-
 //const bgDark = "#110033";
 //const bgLight = "#66b3ff";
 
