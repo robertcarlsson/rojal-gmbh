@@ -1,5 +1,5 @@
 import React from "react";
-import "./survey.css"
+import "./survey.css";
 //import ProgressBar from "./progressBar/progressBar";
 
 import { sunLight } from "./Sun/Sun";
@@ -84,7 +84,7 @@ class Survey extends React.Component {
   render() {
     return (
       <div style={{ backgroundColor: bgColor[this.state.value] }}>
-        <ul className="progress-indicator">
+        <ul className="progress-indicator progress-bar">
           <li className={this.state.status1}>
             {" "}
             <span className="bubble"></span>
@@ -109,10 +109,10 @@ class Survey extends React.Component {
           setValue={this.setValue}
         />
         <div className="buttons">
-          <button onClick={this.showPrevPage} className="bakat" >
+          <button onClick={this.showPrevPage} className="bakat">
             Bakåt
           </button>
-          <button onClick={this.showNextPage} className="framat" >
+          <button onClick={this.showNextPage} className="framat">
             {" "}
             Framåt{" "}
           </button>
