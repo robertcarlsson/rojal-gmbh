@@ -102,20 +102,18 @@ class Survey extends React.Component {
             <span className="bubble"></span>{" "}
           </li>
         </ul>
-        {/* <ProgressBar pageNumber={this.state.pageNumber}/> */}
-        {/* <div className="lead">{this.renderQuestion()}</div> */}
         <Question
           question={questions[this.state.pageNumber - 1]}
           setValue={this.setValue}
         />
         <div className="buttons">
-          <button onClick={this.showPrevPage} className="bakat" >
+          {this.state.pageNumber > 1 ? <button onClick={this.showPrevPage} className="bakat" >
             Bakåt
-          </button>
+          </button> : <button></button> }
+          {this.state.pageNumber < 6 ?
           <button onClick={this.showNextPage} className="framat" >
-            {" "}
-            Framåt{" "}
-          </button>
+            Framåt
+          </button> : <button></button> }
         </div>
       </div>
     );
