@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/rojal-gmbh/static/css/main.43828662.chunk.css",
-    "main.js": "/rojal-gmbh/static/js/main.6a5a17db.chunk.js",
-    "main.js.map": "/rojal-gmbh/static/js/main.6a5a17db.chunk.js.map",
+    "main.js": "/rojal-gmbh/static/js/main.9b07455d.chunk.js",
+    "main.js.map": "/rojal-gmbh/static/js/main.9b07455d.chunk.js.map",
     "runtime-main.js": "/rojal-gmbh/static/js/runtime-main.5c482a72.js",
     "runtime-main.js.map": "/rojal-gmbh/static/js/runtime-main.5c482a72.js.map",
     "static/js/2.59d1b1a7.chunk.js": "/rojal-gmbh/static/js/2.59d1b1a7.chunk.js",
     "static/js/2.59d1b1a7.chunk.js.map": "/rojal-gmbh/static/js/2.59d1b1a7.chunk.js.map",
     "index.html": "/rojal-gmbh/index.html",
-    "precache-manifest.f47bf4d8612115343373f4c73c03fe16.js": "/rojal-gmbh/precache-manifest.f47bf4d8612115343373f4c73c03fe16.js",
+    "precache-manifest.90c861393efb6c89ab8909c355d935fa.js": "/rojal-gmbh/precache-manifest.90c861393efb6c89ab8909c355d935fa.js",
     "service-worker.js": "/rojal-gmbh/service-worker.js",
     "static/css/main.43828662.chunk.css.map": "/rojal-gmbh/static/css/main.43828662.chunk.css.map"
   },
@@ -16,6 +16,6 @@
     "static/js/runtime-main.5c482a72.js",
     "static/js/2.59d1b1a7.chunk.js",
     "static/css/main.43828662.chunk.css",
-    "static/js/main.6a5a17db.chunk.js"
+    "static/js/main.9b07455d.chunk.js"
   ]
 }
