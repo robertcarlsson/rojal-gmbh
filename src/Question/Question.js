@@ -3,7 +3,7 @@ import { Stage, Layer, Line, Rect, Text } from "react-konva";
 
 import Sun from "../Sun/Sun";
 
-//const min_val = 200;
+export const max_height = 200;
 export const min_height = window.innerHeight / 1.3;
 export const middle = window.innerWidth / 2;
 
@@ -34,7 +34,7 @@ class Question extends Component {
           />
           <Sun
             SetValue={this.SetValue}
-            min_val={200}
+            min_val={max_height}
             max_val={min_height}
             value={this.state.value}
           />
@@ -51,18 +51,18 @@ class Question extends Component {
             stroke="black"
           />
           <Text
-            x={middle - 200}
+            x={middle - 150}
             y={min_height - 50}
             text={this.state.value.toString()}
-            fontSize={35}
+            fontSize={50}
             fill="white"
           />
           <Text
-            x={middle - 250}
-            y={50}
+            x={middle - 160}
+            y={25}
             text={this.props.question}
             fontSize={35}
-            width={500}
+            width={340}
             align="center"
             fill="white"
           />
