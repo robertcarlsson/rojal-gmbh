@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/rojal-gmbh/precache-manifest.5819926799a789bdcc28bf0e0bfbaf95.js"
+  "/rojal-gmbh/precache-manifest.2433537ad9a1c56059a3e216ebccd2a6.js"
 );
 
 self.addEventListener('message', (event) => {
