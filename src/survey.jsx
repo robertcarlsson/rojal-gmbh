@@ -1,7 +1,8 @@
 import React from "react";
 //import ProgressBar from "./progressBar/progressBar";
 
-import Question from "./Question/Question";
+import { sunLight } from "./Sun/Sun";
+import Question, { bgColor } from "./Question/Question";
 
 const questions = [
   "Hur väl uppfyller Valtech dina förväntingar?",
@@ -18,7 +19,8 @@ class Survey extends React.Component {
       status1: "completed",
       status2: "",
       status3: "",
-      status4: ""
+      status4: "",
+      value: 1
     };
     this.showNextPage = this.showNextPage.bind(this);
     this.showPrevPage = this.showPrevPage.bind(this);
@@ -71,12 +73,16 @@ class Survey extends React.Component {
     } else if (this.state.pageNumber === 4) {
       question = "Var du ärlig?";
     }
+    console.log(sunLight);
     return <p> {question} </p>;
   }
+  setValue = value => {
+    this.setState({ value: value });
+  };
 
   render() {
     return (
-      <div>
+      <div style={{ backgroundColor: bgColor[this.state.value] }}>
         <ul className="progress-indicator">
           <li className={this.state.status1}>
             {" "}
@@ -97,7 +103,10 @@ class Survey extends React.Component {
         </ul>
         {/* <ProgressBar pageNumber={this.state.pageNumber}/> */}
         {/* <div className="lead">{this.renderQuestion()}</div> */}
-        <Question question={questions[this.state.pageNumber - 1]} />
+        <Question
+          question={questions[this.state.pageNumber - 1]}
+          setValue={this.setValue}
+        />
         <div>
           <button onClick={this.showPrevPage} type="button">
             Bakåt
