@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9c64820a407699db4e8bf4dbd542bf30",
+    "revision": "092908e48025c9f8e27e2d087deaa0bd",
     "url": "/rojal-gmbh/index.html"
   },
   {
-    "revision": "9ea0b266cc3107e61224",
+    "revision": "b65c3e359f99b96e4820",
     "url": "/rojal-gmbh/static/css/main.43828662.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/rojal-gmbh/static/js/2.59d1b1a7.chunk.js"
   },
   {
-    "revision": "9ea0b266cc3107e61224",
-    "url": "/rojal-gmbh/static/js/main.fbc1046f.chunk.js"
+    "revision": "b65c3e359f99b96e4820",
+    "url": "/rojal-gmbh/static/js/main.6a5a17db.chunk.js"
   },
   {
     "revision": "7e9cadf58970a8fb349a",
