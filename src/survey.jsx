@@ -1,4 +1,5 @@
 import React from "react";
+import "./survey.css"
 //import ProgressBar from "./progressBar/progressBar";
 
 import Question from "./Question/Question";
@@ -98,11 +99,11 @@ class Survey extends React.Component {
         {/* <ProgressBar pageNumber={this.state.pageNumber}/> */}
         {/* <div className="lead">{this.renderQuestion()}</div> */}
         <Question question={questions[this.state.pageNumber - 1]} />
-        <div>
-          <button onClick={this.showPrevPage} type="button">
+        <div className="buttons">
+          <button onClick={this.showPrevPage} className="bakat" >
             Bakåt
           </button>
-          <button onClick={this.showNextPage} type="button">
+          <button onClick={this.showNextPage} className="framat" >
             {" "}
             Framåt{" "}
           </button>

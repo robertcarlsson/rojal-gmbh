@@ -1,0 +1,19 @@
+.buttons {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.bakat {
+    margin-right: 10px;
+    margin-left: 10px;
+    border: 1px black;
+    padding: 10px 15% 10px 15%;
+}
+
+.framat {
+    margin-right: 10px;
+    margin-left: 10px;
+    border: 1px black;
+    padding: 10px 15% 10px 15%;
+}
