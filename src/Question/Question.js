@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Stage, Layer, Line, Rect, Text } from "react-konva";
 
 import Sun from "../Sun/Sun";
+//import { thisExpression } from "@babel/types";
 
 export const max_height = 200;
 export const min_height = window.innerHeight / 1.3;
@@ -10,7 +11,14 @@ export const middle = window.innerWidth / 2;
 //const bgDark = "#110033";
 //const bgLight = "#66b3ff";
 
-const bgColor = [0, "#110033", "#222377", "#335399", "#5593bb", "#66b3ff"];
+export const bgColor = [
+  0,
+  "#110033",
+  "#222377",
+  "#335399",
+  "#5593bb",
+  "#66b3ff"
+];
 
 class Question extends Component {
   state = {
@@ -19,6 +27,7 @@ class Question extends Component {
 
   SetValue = value => {
     this.setState({ value: value });
+    this.props.setValue(value);
   };
 
   render() {

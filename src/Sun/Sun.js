@@ -8,7 +8,14 @@ import "./Sun.css";
 //const max_val = window.innerHeight / 2;
 
 // const sunDark = "#ff6600";
-const sunLight = [0, "#ff6600", "#ff9900", "#ffbb00", "#ffcc00", "#ffff00"];
+export const sunLight = [
+  0,
+  "#ff6600",
+  "#ff9900",
+  "#ffbb00",
+  "#ffcc00",
+  "#ffff00"
+];
 
 export default function Sun(props) {
   //const [color, setColor] = React.useState("#ffdd88");
