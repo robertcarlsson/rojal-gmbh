@@ -1,5 +1,5 @@
 import React from "react";
-import "./survey.css"
+import "./survey.css";
 //import ProgressBar from "./progressBar/progressBar";
 
 import { sunLight } from "./Sun/Sun";
@@ -8,8 +8,10 @@ import Question, { bgColor } from "./Question/Question";
 const questions = [
   "Hur väl uppfyller Valtech dina förväntingar?",
   "Hur väl trivs du på din arbetsplats?",
-  "Hur mår du egentligen?",
-  "Var du ärlig?"
+  "Hur upplever du inomhustemperaturen på kontoret?",
+  "Något annat du tänkt på",
+  "",
+  "Sluta leta buggar"
 ];
 
 class Survey extends React.Component {
@@ -84,7 +86,7 @@ class Survey extends React.Component {
   render() {
     return (
       <div style={{ backgroundColor: bgColor[this.state.value] }}>
-        <ul className="progress-indicator">
+        <ul className="progress-indicator progress-bar">
           <li className={this.state.status1}>
             {" "}
             <span className="bubble"></span>
