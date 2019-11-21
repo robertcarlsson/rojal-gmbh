@@ -8,8 +8,10 @@ import Question, { bgColor } from "./Question/Question";
 const questions = [
   "Hur väl uppfyller Valtech dina förväntingar?",
   "Hur väl trivs du på din arbetsplats?",
-  "Hur mår du egentligen?",
-  "Var du ärlig?"
+  "Hur upplever du inomhustemperaturen på kontoret?",
+  "Något annat du tänkt på",
+  "",
+  "Sluta leta buggar"
 ];
 
 class Survey extends React.Component {
